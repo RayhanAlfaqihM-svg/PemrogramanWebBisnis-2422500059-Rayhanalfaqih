@@ -70,8 +70,13 @@
                         <div class="card" style="width: 18rem;">
                           <img src="<?= base_url('uploads/produk/') . $gambar['nama_gambar'] ?>" class="card-img-top">
                           <div class="card-body d-grid">
-                            <a href="#" class="btn btn-danger">Hapus</a>
-                          </div>
+  
+                          <a href="<?= base_url('administrator/produk_controller/hapus_gambar_produk/' . $gambar['id_gambar'] . '/' . $produk['id_produk']) ?>" 
+                                class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus gambar ini?')">
+                                    Hapus
+                          </a>
+                        </div>
+
                         </div>
                       </div>
                     <?php endforeach ?>

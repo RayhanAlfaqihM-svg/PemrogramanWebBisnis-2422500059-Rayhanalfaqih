@@ -63,8 +63,20 @@ $route['admin/kategori/tambah'] = 'administrator/kategori_controller/tambah_kate
 $route['admin/kategori/hapus/(:num)'] = 'administrator/kategori_controller/hapus_kategori/$1';
 $route['admin/kategori/ubah/(:num)'] = 'administrator/kategori_controller/ubah_kategori/$1';
 
+# admin kota
+$route['admin/kota'] = 'administrator/Kota2422500059_controller/index';
+$route['admin/kota/tambah_kota'] = 'administrator/Kota2422500059_controller/tambah_kota';
+$route['admin/kota/hapus/(:num)'] = 'administrator/Kota2422500059_controller/hapus_kota/$1';
+$route['admin/kota/ubah_kota/(:num)'] = 'administrator/Kota2422500059_controller/ubah_kota/$1';
+
 #produk
 $route['admin/produk'] = 'administrator/Produk_controller/index';
 $route['admin/produk/tambah'] = 'administrator/Produk_controller/tambah_produk';
 $route['admin/produk/hapus/(:num)'] = 'administrator/Produk_controller/hapus_produk/$1';
 $route['admin/produk/ubah/(:num)'] = 'administrator/Produk_controller/ubah_produk/$1';
+
+#pelanggan
+$route['login'] = 'pelanggan_controller/login';
+$route['register'] = 'pelanggan_controller/register';
+$route['logout'] = 'pelanggan_controller/logout';
+$route['profil'] = 'pelanggan_controller/profil';

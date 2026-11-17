@@ -18,6 +18,13 @@ class Produk_gambar_model extends CI_Model
         return $query->result_array();
     }
 
+    public function get_by_id($id_gambar)
+{
+    
+    return $this->db->get_where('produk_gambar', ['id_gambar' => $id_gambar])->row_array();
+}
+
+
     public function hapus($id)
     {
         $this->db->delete($this->_table, array('id_gambar' => $id));
